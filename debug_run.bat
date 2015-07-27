@@ -1,1 +1,0 @@
-SET DEBUG=thunder:* & npm start
