@@ -89,6 +89,10 @@ nav span {
     text-decoration: none;
 }
 
+.nav-item > a:visited{
+    color: #FFF;
+}
+
 .pull-left {
     float: left;
 }
@@ -184,4 +188,10 @@ article {
 .subscribe a:hover {
     transition: box-shadow 0.5s;
     cursor: pointer;
+}
+
+
+
+.notfound {
+    text-align: center;
 }
