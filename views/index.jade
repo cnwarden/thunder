@@ -7,6 +7,7 @@ html(lang='en')
     title= title
     link(rel='shortcut icon', href='/static/favicon.png')
     link(rel='stylesheet', href='http://fonts.useso.com/css?family=Roboto:300,400,600&subset=latin,latin-ext')
+    link(rel='stylesheet', href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext')
     link(rel='stylesheet', href='/static/font-awesome/css/font-awesome.css')
     link(rel='stylesheet', href='/static/css/site.css')
   body
@@ -18,15 +19,9 @@ html(lang='en')
                         li(class="nav-item") 
                             a(href="/hdata") CHINA DATA
                         li(class="nav-item") 
-                            a(href="/algorithm") ALGORITHM
-                        li(class="nav-item") 
                             a(href="/community") COMMUNITY
                         li(class="nav-item") 
                             a(class="js-weixin-trigger") WEIXIN
-                            div(style="display:none;")
-                                img(src="/static/img/weixin.png")
-                            span |
-                            a QQ
                         li(class="nav-item dropdown js-dropdown-help") 
                             a(class="js-dropdown-trigger") Menu
                             ul(class="js-dropdown-sheet dropdown-sheet" style="display:none")
@@ -59,8 +54,13 @@ html(lang='en')
                         span Oxford Undergraduates and the ISIS School of Art Criticism
     block footer
         div(class="row")
-            div(class="col-10 col-offset-1")
-                footer Copyright © 2015 JUQuant | Powered by Quant
+            div(class="col-12 footer")
+                div(class="subscribe")
+                    a
+                        i(class="fa fa-rss")
+                div(class="footer-text")
+                    span Copyright © 2015 JUQuant | Powered by Quant
+                    
                 
     script(type='text/javascript', src='http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.4.2')
     script(type='text/javascript', src='/static/js/site.js')
