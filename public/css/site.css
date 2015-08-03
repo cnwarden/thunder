@@ -134,3 +134,9 @@ article {
     padding-left: 10px;
     line-height: 14px;
 }
+
+footer {
+    margin: 25px;
+    font-size: 12px;
+    text-align: center;
+}
