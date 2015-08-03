@@ -6,19 +6,58 @@ html(lang='en')
     meta(name='description', content='the personal website, focus on finance, bigdata')
     title= title
     link(rel='shortcut icon', href='/static/favicon.png')
-    link(rel='stylesheet', href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext')
+    link(rel='stylesheet', href='http://fonts.useso.com/css?family=Roboto:300,400,600&subset=latin,latin-ext')
     link(rel='stylesheet', href='/static/font-awesome/css/font-awesome.css')
     link(rel='stylesheet', href='/static/css/site.css')
-    link(rel='stylesheet', href='/static/bootstrap/css/bootstrap.css')
   body
-    block menu
-        ul(class='nav pull-left')
-            li About
-            li Features
-            li Contact
+    block header
+        header(class="row")
+            div(class="col-10 col-offset-1")
+                nav(class="pull-right")
+                    ul
+                        li(class="nav-item") 
+                            a(href="/hdata") CHINA DATA
+                        li(class="nav-item") 
+                            a(href="/algorithm") ALGORITHM
+                        li(class="nav-item") 
+                            a(href="/community") COMMUNITY
+                        li(class="nav-item") 
+                            a(class="js-weixin-trigger") WEIXIN
+                            div(style="display:none;")
+                                img(src="/static/img/weixin.png")
+                            span |
+                            a QQ
+                        li(class="nav-item dropdown js-dropdown-help") 
+                            a(class="js-dropdown-trigger") Menu
+                            ul(class="js-dropdown-sheet dropdown-sheet" style="display:none")
+                                li Question
+                                li Answer
+                // a
+                //    img(src="/static/img/logo.svg", class="logo")
     block content
-        h1 Ming's Wo
+        div(class="row")
+            div(class="col-10 col-offset-1")
+                article
+                    img(class="article_logo pull-left" src="/static/img/article_logo.png")
+                    div(class="article_header")
+                        span Obama Poised to Unveil Aggressive Climate Change Plan
+                article
+                    img(class="article_logo pull-left" src="/static/img/article_logo.png")
+                    div(class="article_header")
+                        span Another Survey Puts Trump Atop GOP Pack
+                article
+                    img(class="article_logo pull-left" src="/static/img/article_logo.png")
+                    div(class="article_header")
+                        span We Are Losing Hearts and Minds in the Former Soviet Empire
+                article
+                    img(class="article_logo pull-left" src="/static/img/article_logo.png")
+                    div(class="article_header")
+                        span Museum Dioramas Are as Endangered as the Animals They Contain
+                article
+                    img(class="article_logo pull-left" src="/static/img/article_logo.png")
+                    div(class="article_header")
+                        span Oxford Undergraduates and the ISIS School of Art Criticism
     block footer
         
     script(type='text/javascript', src='http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.4.2')
-    script(type='text/javascript', src='/static/bootstrap/js/bootstrap.js')
+    script(type='text/javascript', src='/static/js/site.js')

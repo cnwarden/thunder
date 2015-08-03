@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='author', content='Ming')
+    meta(name='description', content='the personal website, focus on finance, bigdata')
+    title= title
+    link(rel='shortcut icon', href='/static/favicon.png')
+    link(rel='stylesheet', href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext')
+    link(rel='stylesheet', href='/static/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/static/css/site.css')
+    link(rel='stylesheet', href='/static/bootstrap/css/bootstrap.css')
+  body
+    block menu
+        ul(class='nav pull-left')
+            li About
+            li Features
+            li Contact
+    block content
+        h1 Ming's Wo
+    block footer
+        
+    script(type='text/javascript', src='http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.4.2')
+    script(type='text/javascript', src='/static/bootstrap/js/bootstrap.js')
