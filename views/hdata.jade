@@ -2,5 +2,5 @@ extends ./index
 block content
     div(class="row")
         div(class="col-10 col-offset-1")
-            form
-                input(type="text")
+            - each instr in instruments
+                span= instr.instrument

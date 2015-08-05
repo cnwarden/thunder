@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 
 var route_index = require('./routes/index');
 var route_hdata = require('./routes/hdata');
+var route_blogs = require('./routes/blogs');
 
 var app = express();
 
@@ -18,6 +19,7 @@ app.set('view engine', 'jade');
 app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use('/', route_index);
 app.use('/hdata', route_hdata);
+app.use('/blogs', route_blogs);
 
 app.get('*', function(req, res, next) {
     res.render('404', {title:'Thunder'});

@@ -1,0 +1,14 @@
+extends ./index
+block content
+    div(class="row")
+        div(class="col-10 col-offset-1")
+            .blog_header= blog_title
+            .blog_summary
+                .blog_summary_col
+                    i(class="fa fa-calendar") 
+                    span(class="post_date")= blog_postdate
+                .blog_summary_col
+                    i(class="fa fa-tag") 
+                    a(class="tag") Travel
+
+            .blog_content By default, when the user installs software through the RPM Package Manager or through YUM, usually, the software’s configuration files included in the RPM do not replace the existing configuration files on the filesystem, but, if they differ from those that currently exist, they are saved with the rpmnew extension. In case the rpm is already installed and is the latest version, the quickest way to get the original configuration file back is to uninstall and install the package again. Today, while on CentOS 6.2, I needed to restore the original /etc/sysctl.conf file, which is part of the initscripts package. In this case, uninstalling initscripts was out of the question as it would also remove half of the installed packages due to dependencies. So, I grabbed the chance to figure out and document what would be the quickest and easiest way to restore /etc/sysctl.conf, excluding downloading the package itself and extract the RPM contents. Fortunately, as soon as I opened yum’s man page and having spotted the new reinstall command, the solution was quite obvious.
