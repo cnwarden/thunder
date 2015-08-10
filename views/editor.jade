@@ -1,0 +1,16 @@
+extends ./index
+block content
+    div(class="row")
+        div(class="col-6")
+            div(id="toolbar")
+                a(id="js-editor-preview")
+                    i(class="fa fa-save")
+            div(id="editor") # Example
+        div(class="col-6")
+            div(id="preview")
+                h1 Example
+
+block pagejs
+    script(src="/static/ace/ace.js" type="text/javascript" charset="utf-8")
+    script(src="/static/marked/marked.js" type="text/javascript" charset="utf-8")
+    script(src="/static/js/editor.js" type="text/javascript" charset="utf-8")

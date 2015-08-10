@@ -2,27 +2,14 @@ extends ./index
 block content
     div(class="row")
         div(class="col-10 col-offset-1")
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
-            div(class="col-2")
-                div(class="stock_header") 中国石油(601857)
-                div(class="stock_content") INFORMATION
+            div(id="toolbar")
+                a(href="/editor/save")
+                    i(class="fa fa-save")
+            div(id="editor") #Example
+
+block pagejs
+    script(src="/static/ace/ace.js" type="text/javascript" charset="utf-8")
+    script.
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/twilight");
+        editor.getSession().setMode("ace/mode/markdown");
