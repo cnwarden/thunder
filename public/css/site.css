@@ -71,17 +71,6 @@ nav {
     margin-left: 8.333333333%
 }
 
-@media screen and (max-width:500px) {
-.col-offset-1 {
-    margin-left: 0px;
-}
-.xs-col-12 {
-    width:100%;
-    float:left;
-    box-sizing: border-box;
-}
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -291,4 +280,24 @@ article {
     text-align: center;
     padding: 0px;
     margin: 0px;
+}
+
+
+
+@media screen and (max-width:500px) {
+    .xs-col-12 {
+        margin-left: 0px;
+        width:100%;
+        float:left;
+        box-sizing: border-box;
+    }
+
+    article {
+        margin: 0px;
+        padding: 15px 0px;
+    }
+
+    .article_logo {
+        display: none;
+    }
 }
